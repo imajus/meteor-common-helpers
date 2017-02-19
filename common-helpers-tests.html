@@ -1,0 +1,55 @@
+<template name="testCommonHelpersLog">
+  {{log 1000 'Hello' name='World' end='!'}}
+</template>
+
+<template name="testCommonHelpersField">
+  {{field o f}}
+</template>
+
+<template name="testCommonHelpersNot">
+  {{not a}}
+</template>
+
+<template name="testCommonHelpersEq">
+  {{eq a b c}}
+</template>
+
+<template name="testCommonHelpersIs">
+  {{is a b c}}
+</template>
+
+<template name="testCommonHelpersAnd">
+  {{and a b c}}
+</template>
+
+<template name="testCommonHelpersOr">
+  {{or a b c}}
+</template>
+
+<template name="testCommonHelpersSum">
+  {{sum a b c}}
+</template>
+
+<template name="testCommonHelpersPositive">
+  {{positive a b c}}
+</template>
+
+<template name="testCommonHelpersNegative">
+  {{negative a b c}}
+</template>
+
+<template name="testCommonHelpersGtGteLtLte">
+  {{#if (gt a b c comp=comp)}}gt{{/if}}{{#if (gte a b c comp=comp)}}gte{{/if}}{{#if (lt a b c comp=comp)}}lt{{/if}}{{#if (lte a b c comp=comp)}}lte{{/if}}
+</template>
+
+<template name="testCommonHelpersNullOrUndefined">
+  {{nullOrUndefined a b c}}
+</template>
+
+<template name="testCommonHelpersWhen">
+  {{when a b c}}{{when d e f yes='yes' no='no'}}
+</template>
+
+<template name="testCommonHelpersChunk">
+  {{#each group in (chunk arr size)}}[{{group.join ','}}]{{/each}}
+</template>
