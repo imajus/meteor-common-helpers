@@ -17,7 +17,8 @@ Tinytest.add('majus:common-helpers - field', (test) => {
   new TemplateTestCase(test, Template.testCommonHelpersField)
     .equal({ o: { a: 1 }, f: 'a' }, '1')
     .equal({ o: { b: 1 }, f: 'a' }, '')
-    .equal({ o: { a: { ab: 1 } }, f: 'a.ab' }, '1');
+    .equal({ o: { a: { ab: 1 } }, f: 'a.ab' }, '1')
+    .equal({ o: { a: [{ b: '1' }] }, f: 'a.0.b' }, '1');
 });
 
 Tinytest.add('majus:common-helpers - not', (test) => {
