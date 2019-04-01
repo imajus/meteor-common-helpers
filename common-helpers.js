@@ -53,7 +53,17 @@ Template.helpers({
 			}
 			return memo;
 		}
-	},
+  },
+  
+  sub(...rest) {
+    if ( rest && rest.length ) {
+			let memo = rest[0];
+			for ( let i=1; i<rest.length; ++i ) {
+				memo -= rest[i];
+			}
+			return memo;
+		}
+  },
 	
 	positive(...rest) {
 		if ( rest && rest.length ) {

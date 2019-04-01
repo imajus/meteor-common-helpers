@@ -45,6 +45,10 @@ _Note:_ returns `false` if only one argument is passed.
 ```html
 <div>{{sum price fee tax}}</div>
 ```
+* `sub(...args)` - Subtract arguments starting from 2nd from 1st.
+```html
+<div>{{sub capacity used}}</div>
+```
 * `positive(...args)` – Returns `true` only if all passed arguments are greater than zero, returns `false` otherwise.
 ```html
 {{#if positive balance}}...{{/if}}
